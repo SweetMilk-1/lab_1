@@ -1,0 +1,19 @@
+.guitar-item {
+  padding: 1em;
+}
+
+.guitar-description {
+  display: flex;
+}
+
+.first-column {
+  padding: 2em;
+}
+
+.first-column img {
+  width: 150px;
+}
+
+.second-column {
+  padding: 2em;
+}
