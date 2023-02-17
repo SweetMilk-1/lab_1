@@ -2,16 +2,13 @@
 
   border: 2px solid black;
   border-collapse: collapse;
-  margin: auto;
 }
 
 .guitar-list td, th {
   padding: 5px;
   border: 2px solid black; 
-  text-align: center;
  }
 
 .guitar-list img {
   width: 60px;
-  margin: auto  ;
 }
