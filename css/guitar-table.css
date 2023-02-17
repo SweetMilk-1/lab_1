@@ -1,12 +1,31 @@
 .guitar-list {
-
-  border: 2px solid black;
+  margin: 30px auto;
   border-collapse: collapse;
 }
 
+.guitar-list-header {
+  background-color: var(--card-bg-color);
+  font-weight: bold;
+}
+
+.guitar-list a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: inherit;
+}
+
+.guitar-list img {
+  width: 40px;
+  border-radius: 5px;
+}
+
 .guitar-list td, th {
-  padding: 5px;
-  border: 2px solid black; 
+  background-color: inherit;
+  font-weight: inherit;
+  font-size: 1.1em;
+  padding: 10px 25px;
+  text-align: center;
+  border-bottom: 1px solid black; 
  }
 
 .guitar-list img {
