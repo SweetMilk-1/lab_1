@@ -3,7 +3,9 @@
   --bg-color: #E9DCE7;
   --card-bg-color: #BEA1DB;
   --white-color: #fff;
+  --border-color: #999;
 }
+
 
 body,div {
   padding: 0;
@@ -14,9 +16,10 @@ body,div {
 }
 
 .container {
-  max-width: 1080px;
+  max-width: 1920px;
   margin: 0 auto;
   background-color: inherit;
+  padding: 0 20px;
 }
 
 .back-link {
@@ -27,9 +30,26 @@ body,div {
 
 .navigation {
   background-color: var(--main-color);
-  padding:10px;
+  padding:20px 10px;
   margin-bottom: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+}
+
+.logo {
+  position: absolute;
+  top:10px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo p{
+  font-family: 'Rampart One', cursive;
+  color: var(--white-color);
+  font-size: 1.8em;
+}
+
+.logo img {
+  width: 6em;
 }
 
 .navigation ul {
@@ -44,7 +64,7 @@ body,div {
 }
 
 .navigation a {
-  font-size: 1.1em;
+  font-size: 0.8em;
   text-decoration: none;
   color:var(--white-color);
   text-transform: uppercase;
