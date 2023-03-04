@@ -4,8 +4,7 @@
   "TableTitle": "Справочник гитар с сайта Muztorg.ru",
   "Columns": [
     "Название", 
-    "Тип",
-    "Иконка",          
+    "Тип",         
     "Цена"
     ],
   "Data": [
@@ -56,6 +55,30 @@
       "Type": "Классическая",
       "Img": "img/guitar_8.jpg",
       "Price": "5 523"
+    },
+    {
+      "Title": "LAVA ME 2 Acoustic White",
+      "Type": "Акустическая",
+      "Img": "img/guitar_9.jpg",
+      "Price": "56 000"
+    },
+    {
+      "Title": "FENDER PLAYER Stratocaster PF 3-Tone Sunburst",
+      "Type": "Электрогитара",
+      "Img": "img/guitar_10.jpg",
+      "Price": "98 000"
+    },
+    {
+      "Title": "KALA KA-15S Kala Mahogany Soprano Ukulele No Binding",
+      "Type": "Укулеле",
+      "Img": "img/guitar_11.jpg",
+      "Price": "4 500"
+    },
+    {
+      "Title": "IBANEZ GSR200B-WNF",
+      "Type": "Бас-гитара",
+      "Img": "img/guitar_12.jpg",
+      "Price": "25 500"
     }
   ]
 }
