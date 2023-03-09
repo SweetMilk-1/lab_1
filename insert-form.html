@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/guitars-form.css">
+  <link rel="shortcut icon" href="img/guitar-icon.png" type="image/png">
+  <title>Добавление гитары</title>
+</head>
+
+<body>
+  <div class="navigation">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="img/guitar-logo.png" alt="icon">
+        <p>Gitarshop</p>
+      </a>
+      <ul>
+        <li><a href="types/acoustic.html">Акустическая</a></li>
+        <li><a href="types/electro.html">Электрогитара</a></li>
+        <li><a href="types/classic.html">Классическая</a></li>
+        <li><a href="types/uculele.html">Укулеле</a></li>
+        <li><a href="types/bass.html">Бас-гитара</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Добавление гитары</h1>
+    <form action="#" class="guitar-form">
+      <input type="text" placeholder="Название" class="guitar-form-title">
+      <textarea placeholder="Описание" class="guitar-form-description"></textarea>
+      <div class="input__wrapper">
+        <input type="file" id="input__file" class="input guitar-form-image">
+        <label for="input__file" class="file-btn">
+          <img src="img/upload-icon.png" alt="" class="guitar-upload-icon">
+          <span class="file-btn-label">Загрузить изображение</span>
+        </label>
+      </div>
+      <select class="guitar-form-select-list">
+        <option>Акустическая гитара</option>
+        <option>Электрогитара</option>
+        <option>Классическая</option>
+        <option>Укулеле</option>
+        <option>Бас-гитара</option>
+      </select>
+      <input type="submit" class="guitar-form-submit">
+    </form>
+  </div>
+  <footer>
+    <div class="container">
+      <a href="https://vk.com/andreysmolyov">Андрей</a>
+      <p>&#169; 2023. Все права защищены</p>
+    </div>
+  </footer>
+  <script>
+    const field = document.getElementById('input__file');
+    const label = field.nextElementSibling,
+      labelVal = label.querySelector('.file-btn-label').innerText;
+    field.addEventListener('change', (e) => {
+      let fileTitle = labelVal;
+      const files = e.target?.files;
+      if (files && files.length >= 1)
+        fileTitle = files[0].name
+      label.querySelector('.file-btn-label').innerText = fileTitle;
+    });
+  </script>
+</body>
+
+</html>
