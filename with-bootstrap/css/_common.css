@@ -1,0 +1,17 @@
+.header {
+  background-color:gainsboro;
+  padding: 15px;
+}
+
+.header-container {
+  background-color: inherit;
+}
+
+.footer {
+  background-color:gainsboro;
+  padding: 15px;
+}
+
+.footer-container {
+  background-color: inherit;
+}
